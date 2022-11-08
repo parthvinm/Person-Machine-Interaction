@@ -1,0 +1,35 @@
+#toolset {
+    width     : 610px;
+    height    : 100px;
+    position  : absolute;
+    left      : 40px;
+    top       : 420px;
+    border    : 0;
+}
+#resettool {
+    background: #358128;
+    color     : #f3f3f3;
+    width     : 80px;
+    height    : 25px;
+    border    : 1px solid #33842a;
+    box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+}
+#donetool {
+    background: #358128;
+    color     : #f3f3f3;
+    width     : 80px;
+    height    : 25px;
+    border    : 1px solid #33842a;
+    box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+}
+canvas {
+	background: #fff;
+	width     : 640px;
+    height    : 360px;
+	display: block;
+	margin:20px auto;
+	cursor: url(../img/cursor.png), crosshair;
+	left      : 50px;
+    top       : 30px;
+    position  : absolute;
+}

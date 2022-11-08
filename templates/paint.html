@@ -1,0 +1,25 @@
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <body onload="line()">
+        <p><h2>Define Machine</h2></p>
+        <p><table>
+            <tr>
+            <td>
+                <fieldset id="toolset">
+                    <button id="resettool" type="button" style="height: 25px; width: 100px;" onclick="reset()">Reset</button>
+                    <br><br>
+                    <button id="donetool" type="button" style="height: 25px; width: 100px;" onclick="sendData()">Done</button>
+                    <br><br>
+                    <button id="donetool" type="button" style="height: 25px; width: 100px;" onclick="back()">Back</button>
+                </fieldset>
+            </td>
+            <td>
+                <canvas width="640" height="360" ></canvas>
+            </td><td>
+                <p id="demo" ></p>
+            </td>
+            </tr>
+        </table></p>
+            <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+            <script src=" {{ url_for('static', filename='script1.js') }}"></script>
+{% endblock %}
